@@ -10,5 +10,5 @@ do
     git clone https://github.com/$i
 done
 find . -name "requirements.txt" -exec python3 -m pip install -r requirements.txt
-cd /girbot
+cd ..
 python3 main.py
