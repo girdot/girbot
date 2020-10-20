@@ -1,0 +1,9 @@
+import os
+from bot import client 
+
+DISCORD_BOT_TOKEN = os.getenv( "DISCORD_BOT_TOKEN" )
+if not DISCORD_BOT_TOKEN:
+    raise Exception( "env variable DISCORD_BOT_TOKEN required" )
+
+if __name__ == "__main__":
+    client.run( DISCORD_BOT_TOKEN )
