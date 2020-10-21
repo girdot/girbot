@@ -11,4 +11,4 @@ do
 done
 find . -name "requirements.txt" -exec python3 -m pip install -r {} \;
 cd ..
-python3 main.py 2>&1
+python3 -u main.py
