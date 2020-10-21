@@ -9,6 +9,6 @@ for i in $(echo ${MODULE_REPOS// /} | sed "s/,/ /g")
 do
     git clone https://github.com/$i
 done
-find . -name "requirements.txt" -exec python3 -m pip install -r {}
+find . -name "requirements.txt" -exec python3 -m pip install -r {} \;
 cd ..
 python3 main.py
