@@ -1,14 +1,10 @@
 #!/bin/bash
-cd /girbot
-rm -rf commands
-git pull
-git reset --hard
-python3 -m pip install -r requirements.txt
-cd commands
+
+# Install modules specified by env variable
 for i in $(echo ${MODULE_REPOS// /} | sed "s/,/ /g")
 do
-    git clone https://github.com/$i
+    python3 -m pip install git+https://github.com/$i
 done
-find . -name "requirements.txt" -exec python3 -m pip install -r {} \;
-cd ..
-python3 -u main.py
+
+# Run the bot
+girbot
