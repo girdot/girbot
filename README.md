@@ -54,6 +54,16 @@ docker run -e DISCORD_BOT_TOKEN=<your-token-here> -e MODULE_REPOS="girdot/girbot
 The `MODULE_REPOS` env variable is a comma separated list of command modules to
 load from github.
 
+## Available modules
+
+Right now I have only written two modules and the documentation for them is
+quite sparse.  Expect updates soon
+
+1.) [girbot-helloworld](https://github.com/girdot/girbot-helloworld) - A simple helloworld plugin meant to be used as a
+template for desigining new modules
+
+2.) [girbot-sodarr](https://github.com/girdot/girbot-sodarr) - A bot for interfacing with [radarr](https://radarr.video/) and [sonarr](https://sonarr.tv/) APIs
+
 ## Writing your own modules
 
 Use the helloworld command module as a template.  Module package names must be
