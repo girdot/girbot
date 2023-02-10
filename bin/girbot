@@ -1,5 +1,6 @@
+#!/usr/bin/env python
 import os
-from bot import client 
+from girbot import client 
 
 DISCORD_BOT_TOKEN = os.getenv( "DISCORD_BOT_TOKEN" )
 if not DISCORD_BOT_TOKEN:
